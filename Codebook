@@ -1,0 +1,11 @@
+For a basic description of the original variables, please see the original "README" and "features_info" files that came with the dataset.
+
+From that starting point, I made the following changes to the data:
+-Datasets from test and train subjects were combined into a single dataset and no longer distinguished as coming from one set or the other.
+-The "subjects" variable was created which simply lists the subject number/ID associated with a given observation.
+-The "activity" variable was created which indicates the descriptive activity (e.g. "WALKING") associated with a given observation.
+-All variables from the original X data sets (described in feature_info.txt) were removed except for those that listed means or standard deviations for a measurement.  Specifically, all variables with mean or std in the title were selected, except for the angle variables (as those were refering to angles between vectors, some of which were means themselves, but the angle variable itself was not a mean).
+-The names ultimately used for each variable are the same as those listed in the features.txt file, except: only lowercase letters were used and hyphens and parentheses were removed. I also substituted in "time" for the "t" at the start of some variables in order to be more descriptive. I left the f as it was, as FFT didn't seem much more descriptive, and writing out the full "fastfouriertransform" seemed far too long and more likely to decrease readability.
+
+The final data set then shows the arithmetic mean of each feature variable by each combination of subject and activity.  This data is provided in "step5table.txt".
+Additional details on the script may be found in the README file and the script itself (run_analysis.R).
