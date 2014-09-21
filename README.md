@@ -1,6 +1,6 @@
 GCD-Project
 ===========
-The attached script (run_analysisR) assumes that you have set your working directory and that the UCI HAR Dataset folder lies within that working directory.  It was created and run with R 3.1.1 (32-bit version).  Many details about the process are also provided within the script itself, providing justification for particular code lines.  The script is also divided into steps for each step of the assignment, as follows:
+The attached script (run_analysis.R) assumes that you have set your working directory and that the UCI HAR Dataset folder lies within that working directory.  It was created and run with R 3.1.1 (32-bit version).  Many details about the process are also provided within the script itself, providing justification for particular code lines.  The script is also divided into steps for each step of the assignment, as follows:
 
 1. Merge training and test data sets into one data set:  This was done by first reading in the 3 files (subject, X, Y) for test and train, then creating a single dataset each for train and test.  Those 2 datasets were then combine to form one final dataset.
 
